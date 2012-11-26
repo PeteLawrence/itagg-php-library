@@ -27,6 +27,12 @@ class iTagg_SMS implements SMS {
         public $response;
 
 
+        /**
+         * Creates a new iTagg_SMS object
+         *
+         * @param string $username iTAGG username
+         * @param string $password iTAGG password
+         */
         function __construct($username = '', $password = '') {
                 $this->recipients = array();
                 $this->api_url = 'http://secure.itagg.com/smsg/sms.mes';
